@@ -1,0 +1,70 @@
+/* responsive: stack for mobile */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .project-card {
+    flex-direction: column;
+    text-align: center;
+  }
+  .project-item {
+    grid-template-columns: 1fr; /* dari 2 kolom → 1 kolom */
+    text-align: center;
+  }
+  .project-text {
+    padding: 10px;
+  }
+  .project-photo {
+    margin-top: 15px;
+    padding-left: 27px;
+  }
+  .project-photo img {
+    max-width: 100%;
+  }
+}
+
+/* animation fade-in content card*/
+.fade-element {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOutDown {
+  to {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+/* carousel projects */
+.carousel {
+  overflow: hidden; /* biar gak bocor */
+  width: 100%;
+  position: relative;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+

@@ -1,0 +1,103 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portofolio</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <main>
+    <!-- navbar -->
+    <header class="navbar">
+      <h1 class="logo">Porto Raihan</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <!--<li><a href="#contact">Contact</a></li>-->
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button id="theme-toggle">Ganti tema >> ☀️</button>
+        <button id="menu-toggle" class="menu-btn">☰</button>
+      </div>	
+    </header>
+
+    <!-- hero -->
+    <section id="hero" class="hero">
+      <div class="hero-text">
+        <h2>Hello, my name is Raihan!</h2>
+        <p>Mahasiswa Informatika & programmer pemula</p>
+        <button id="contact-btn" class="btn">Contact Me</button>
+      </div>
+      <div class="hero-photo">
+        <img src="assets/profilenew.jpg" alt="Foto Profil">
+      </div>
+    </section>
+
+    <div class="background">
+      <!-- about -->
+      <section id="about" class="content-card">
+        <div class="about-container">
+        <div class="about-photo">
+          <img src="assets/aboutnew.jpg" alt="About Me Photo">
+        </div>
+        <div class="about-text">
+          <h2>About Me</h2>
+          <p>
+                Nama saya Muhammad Raihan Ramdhani
+            <br>Mahasiswa dari Universitas Jember, Fakultas Ilmu Komputer, Prodi Informatika
+            <br>Saya memiliki minat di bidang data engineering, machine learning, dan game dev!
+          </p>
+        </div>
+      </div>
+      </section>
+
+      <!-- projects -->
+      <section id="projects" class="content-card">
+        <h2>Projects</h2>
+        <div id="project-display" class="project-card">
+          <div class="carousel">
+            <div class="carousel-inner" id="carousel-inner">
+              <!-- scripts.js inject project kesini -->
+            </div>
+          </div>
+        </div>
+
+        <div class="project-nav">
+          <button id="prev-btn" class="btn">← Prev</button>
+          <button id="next-btn" class="btn">Next →</button>
+        </div>
+      </section>
+
+      <!-- skills -->
+      <section id="skills" class="content-card">
+        <h2>Skills</h2>
+        <div id="skills-container" class="skills-grid">
+          <!-- scripts.js inject skills kesini  -->
+        </div>
+      </section>
+
+      <!-- footer -->
+      <footer id="contact" class="footer">
+        <h2>Contact Me</h2>
+        <p>Email: rayhan05.rr@gmail.com</p>
+        <p>
+          <a href="https://www.linkedin.com/in/raihan-ramdhani-08abb2330/" target="_blank" rel="noopener noreferrer">LinkedIn</a> | 
+          <a href="https://github.com/AsAnotherAnonym" target="_blank" rel="noopener noreferrer">GitHub</a> | 
+          <a href="https://instagram.com/raihan.ramdhani_" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </p>
+        <p>&copy; 2025 Raihan </p>
+      </footer>
+    </div>
+
+  </main>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>

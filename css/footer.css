@@ -1,0 +1,18 @@
+.footer {
+  position: fixed;
+  bottom: -230px; /* singitan */
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  background: var(--content-color);
+  padding: 10px 20px;
+  border-radius: 12px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: bottom 0.6s ease;
+}
+
+/* kejutan */
+.footer.show {
+  bottom: 10px;
+}

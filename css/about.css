@@ -1,0 +1,19 @@
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.about-photo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.about-photo img {
+  width: 200px;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+.about-text {
+  flex: 2;
+}
